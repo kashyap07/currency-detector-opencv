@@ -1,5 +1,6 @@
-# @Author: Suhas Kashyap
-# Date:	2017-03-22
+#!usr/bin/env python
+# @Author:	Suhas Kashyap
+# @Date:	2017-03-22
 
 # UE14CS348 Digital Image Processing Mini Project
 # Indian paper currency detection
@@ -61,19 +62,22 @@ def histogram(image):
 # fast fourier transform
 def fourier(image):
 	f = np.fft.fft2(image)
-	fshift = np.fft.fshift(f)
+	fshift = np.fft.fftshift(f)
 	magnitude_spectrum = 20 * np.log(np.abs(fshift))
 
 	plt.subplot(121), plt.imshow(image, cmap='gray')
 	plt.title('Input Image'), plt.xticks([]), plt.yticks([])
+
 	plt.subplot(122), plt.imshow(magnitude_spectrum, cmap='gray')
-	plt.title('Magnitude Spectrum'), plt.xticks([]), plt.yticks([])
+	plt.title('FFT'), plt.xticks([]), plt.yticks([])
+
 	plt.show()
 
 
 # calculate scale and fit into display
 def display(window_name, image):
 	screen_res = 1440, 900	# MacBook Air
+	
 	scale_width = screen_res[0] / image.shape[1]
 	scale_height = screen_res[1] / image.shape[0]
 	scale = min(scale_width, scale_height)
