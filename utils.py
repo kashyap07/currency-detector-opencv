@@ -34,8 +34,14 @@ def img_to_neg(image):
 
 # binarize (threshold)
 # retval not used currently
-def binarize(image, threshold):
+def binary_thresh(image, threshold):
 	retval, img_thresh = cv2.threshold(image, threshold, 255, cv2.THRESH_BINARY)
+	return img_thresh
+
+# NO IDEA HOW THIS WPRKS
+def adaptive_thresh(image):
+	img_thresh = cv2.adaptiveThreshold(image, 255, cv2.ADAPTIVE_THRESH_GAUSSIAN_C, cv2.THRESH_BINARY, 11, 8)
+	# cv2.adaptiveThreshold(src, maxValue, adaptiveMethod, thresholdType, blockSize, C[, dst]) → dsta
 	return img_thresh
 
 
