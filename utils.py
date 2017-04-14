@@ -19,10 +19,20 @@ def read_img(file_name):
 	img = cv2.imread(file_name)
 	return img
 
+# TODO
+# 	resize
+#	while aspect ratio is fixed
+
 
 # convert image to grayscale
 def img_to_gray(image):
 	img_gray = cv2.cvtColor(image, cv2.COLOR_RGB2GRAY)
+	return img_gray
+
+
+# gaussian blurred grayscale
+def img_to_gaussian_gray(image):
+	img_gray = cv2.GaussianBlur(img_to_gray(image), (5, 5), 0)
 	return img_gray
 
 
@@ -38,6 +48,7 @@ def binary_thresh(image, threshold):
 	retval, img_thresh = cv2.threshold(image, threshold, 255, cv2.THRESH_BINARY)
 	return img_thresh
 
+
 # NO IDEA HOW THIS WPRKS
 def adaptive_thresh(image):
 	img_thresh = cv2.adaptiveThreshold(image, 255, cv2.ADAPTIVE_THRESH_GAUSSIAN_C, cv2.THRESH_BINARY, 11, 8)
@@ -47,14 +58,27 @@ def adaptive_thresh(image):
 
 # sobel edge operator
 def sobel_edge(image, align):
-	img_horiz = cv2.Sobel(image, cv2.CV_64F, 0, 1)
-	img_vert = cv2.Sobel(image, cv2.CV_64F, 1, 0)
+	img_horiz = cv2.Sobel(image, cv2.CV_8U, 0, 1)
+	img_vert = cv2.Sobel(image, cv2.CV_8U, 1, 0)
 	if align == 'h':
 		return img_horiz
 	elif align == 'v':
 		return img_vert
 	else:
 		print('use h or v')
+
+
+# canny edge operator
+def canny_edge(image):
+	img_canny = cv2.Canny(image, 75, 200)
+	return img_canny
+
+
+# detect countours
+def find_contours(image):
+	(_, contours, _) = cv2.findContours(image, cv2.RETR_LIST, cv2.CHAIN_APPROX_SIMPLE)
+	contours = sorted(contours, key = cv2.contourArea, reverse = True)[:5]
+	return contours
 
 
 # calculate histogram
