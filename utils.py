@@ -12,6 +12,8 @@ import cv2
 import numpy as np
 import matplotlib.pyplot as plt
 #from scipy import ndimage
+from skimage import io
+from pprint import pprint
 
 
 # read image as is
@@ -79,6 +81,26 @@ def find_contours(image):
 	(_, contours, _) = cv2.findContours(image, cv2.RETR_LIST, cv2.CHAIN_APPROX_SIMPLE)
 	contours = sorted(contours, key = cv2.contourArea, reverse = True)[:5]
 	return contours
+
+
+# erode image
+def close(image):
+	img = cv2.Canny(image, 75, 300)
+	img = cv2.dilate(img, None)
+	img = cv2.erode(img, None)
+	return img
+
+
+def harris_edge(image):
+	img_gray = np.float32(image)
+
+	corners = cv2.goodFeaturesToTrack(img_gray, 4, 0.03, 200, None, None, 2,useHarrisDetector=True, k=0.04)
+	corners = np.int0(corners)
+
+	for corner in corners:
+		x, y = corner.ravel()
+		cv2.circle(image, (x, y), 3, 255, -1)
+	return image
 
 
 # calculate histogram
