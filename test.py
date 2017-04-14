@@ -7,6 +7,7 @@
 from utils import *
 
 img = read_img('files/500.jpg')
+img = resize_img(img, 0.6)
 
 img = img_to_gray(img)
 #img = canny_edge(img)
@@ -17,8 +18,9 @@ img = img_to_gray(img)
 #img = close(img)
 #img = adaptive_thresh(img)
 #img = sobel_edge(img, 'h')
+img = sobel_edge2(img)
 #histogram(img)
 #fourier(img)
-img = harris_edge(img)
+#img = harris_edge(img)
 
 display('image', img)

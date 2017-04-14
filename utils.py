@@ -9,6 +9,7 @@
 # contains utility functions
 
 import cv2
+import math
 import numpy as np
 import matplotlib.pyplot as plt
 #from scipy import ndimage
@@ -24,6 +25,10 @@ def read_img(file_name):
 # TODO
 # 	resize
 #	while aspect ratio is fixed
+
+def resize_img(image, scale):
+	res = cv2.resize(image, None, fx=scale, fy=scale, interpolation = cv2.INTER_AREA)
+	return res
 
 
 # convert image to grayscale
@@ -68,6 +73,17 @@ def sobel_edge(image, align):
 		return img_vert
 	else:
 		print('use h or v')
+
+
+def sobel_edge2(image):
+	# ksize = size of extended sobel kernel
+	grad_x = cv2.Sobel(image, cv2.CV_16S, 1, 0, ksize=3, borderType = cv2.BORDER_DEFAULT)
+	grad_y = cv2.Sobel(image, cv2.CV_16S, 0, 1, ksize=3, borderType = cv2.BORDER_DEFAULT)
+
+	abs_grad_x = cv2.convertScaleAbs(grad_x)
+	abs_grad_y = cv2.convertScaleAbs(grad_y)
+	dst = cv2.addWeighted(abs_grad_x, 0.5, abs_grad_y, 0.5, 0)
+	return dst
 
 
 # canny edge operator
