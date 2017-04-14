@@ -12,7 +12,7 @@ img = img_to_gray(img)
 #img = img_to_neg(img)
 #img = binary_thresh(img, 128)
 #img = adaptive_thresh(img)
-#img = sobel_edge(img, 'h')
+img = sobel_edge(img, 'h')
 histogram(img)
 fourier(img)
 
