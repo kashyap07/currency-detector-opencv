@@ -75,6 +75,7 @@ def sobel_edge(image, align):
 		print('use h or v')
 
 
+# sobel edge x + y
 def sobel_edge2(image):
 	# ksize = size of extended sobel kernel
 	grad_x = cv2.Sobel(image, cv2.CV_16S, 1, 0, ksize=3, borderType = cv2.BORDER_DEFAULT)
@@ -87,10 +88,24 @@ def sobel_edge2(image):
 
 
 # canny edge operator
-def canny_edge(image):
-	img_canny = cv2.Canny(image, 75, 200)
-	return img_canny
+def canny_edge(image, block_size, ksize):
+	# block_size => Neighborhood size
+	# ksize => Aperture parameter for the Sobel operator
+	
+	# 350, 350 => for smaller 500
+	# 720, 350 => Devnagari 500, Reserve bank of India
+	
+	img = cv2.Canny(image, block_size, ksize)
+	# dilate to fill up the numbers
+	#img = cv2.dilate(img, None)
+	return img
 
+
+# laplacian edge
+def laplacian_edge(image):
+	# good for text
+	img = cv2.Laplacian(image, cv2.CV_8U)
+	return img
 
 # detect countours
 def find_contours(image):
