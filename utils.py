@@ -13,7 +13,7 @@ import math
 import numpy as np
 import matplotlib.pyplot as plt
 #from scipy import ndimage
-from skimage import io
+#from skimage import io
 from pprint import pprint
 
 
@@ -83,6 +83,7 @@ def sobel_edge2(image):
 
 	abs_grad_x = cv2.convertScaleAbs(grad_x)
 	abs_grad_y = cv2.convertScaleAbs(grad_y)
+
 	dst = cv2.addWeighted(abs_grad_x, 0.5, abs_grad_y, 0.5, 0)
 	return dst
 
