@@ -1,5 +1,4 @@
 #!usr/bin/env python
-# @Author:	Suhas Kashyap
 # @Date:	2017-03-22
 
 # UE14CS348 Digital Image Processing Mini Project
@@ -12,8 +11,6 @@ import cv2
 import math
 import numpy as np
 import matplotlib.pyplot as plt
-#from scipy import ndimage
-#from skimage import io
 from pprint import pprint
 
 
@@ -32,7 +29,6 @@ def resize_img(image, scale):
 def img_to_gray(image):
 	img_gray = cv2.cvtColor(image, cv2.COLOR_RGB2GRAY)
 	return img_gray
-
 
 # gaussian blurred grayscale
 def img_to_gaussian_gray(image):
@@ -105,11 +101,24 @@ def laplacian_edge(image):
 	img = cv2.Laplacian(image, cv2.CV_8U)
 	return img
 
+
 # detect countours
 def find_contours(image):
 	(_, contours, _) = cv2.findContours(image, cv2.RETR_LIST, cv2.CHAIN_APPROX_SIMPLE)
 	contours = sorted(contours, key = cv2.contourArea, reverse = True)[:5]
 	return contours
+
+
+# median blur
+def median_blur(image):
+	blurred_img = cv2.medianBlur(image, 3)
+	return blurred_img
+
+
+# dialte image to close lines
+def dilate_img(image):
+	img = cv2.dilate(image, np.ones((5,5), np.uint8))
+	return img
 
 
 # erode image
