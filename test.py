@@ -14,6 +14,10 @@
 from utils import *
 from matplotlib import pyplot as plt
 
+import subprocess
+from gtts import gTTS
+
+
 # image = read_img('files/500_1.jpg')
 # orig = image
 # orig = resize_img(orig, 0.5)
@@ -154,11 +158,11 @@ orb = cv2.ORB_create()
 # must preprcoess and warp the image
 
 #img1 = read_img('files/test_100_2.jpg')
-#img1 = read_img('files/test_50_2.jpg')
-img1 = read_img('files/test_20_2.jpg')
+img1 = read_img('files/test_50_2.jpg')
+#img1 = read_img('files/test_20_2.jpg')
 
-# img = img_to_gray(img1)
-# display('original', img1)
+orig = resize_img(img1, 0.4)
+display('original', orig)
 
 (kp1, des1) = orb.detectAndCompute(img1, None)
 # orb is an alternative for SIFT
@@ -222,9 +226,18 @@ if maxVal != 8:
 	#print('good matches ', maxVal)
 	img2 = cv2.imread(l[maxPt])
 	img3 = cv2.drawMatchesKnn(img1, kp1, img2, maxKp, good, 2,)
-	(plt.imshow(img3), plt.show())
+	
 
 	note = str(l[maxPt])[6:-4]
 	print('\nDetected denomination: Rs. ', note)
+
+	speech_out = note + 'Rupees'
+
+	audio_file = "value.mp3"
+	tts = gTTS(text=speech_out, lang="en")
+	tts.save(audio_file)
+	return_code = subprocess.call(["afplay", audio_file])
+
+	(plt.imshow(img3), plt.show())
 else:
 	print('No Matches')
