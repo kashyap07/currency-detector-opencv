@@ -19,6 +19,7 @@ def read_img(file_name):
 	img = cv2.imread(file_name)
 	return img
 
+
 # resize image with fixed aspect ratio
 def resize_img(image, scale):
 	res = cv2.resize(image, None, fx=scale, fy=scale, interpolation = cv2.INTER_AREA)
@@ -29,6 +30,7 @@ def resize_img(image, scale):
 def img_to_gray(image):
 	img_gray = cv2.cvtColor(image, cv2.COLOR_RGB2GRAY)
 	return img_gray
+
 
 # gaussian blurred grayscale
 def img_to_gaussian_gray(image):

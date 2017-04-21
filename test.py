@@ -17,7 +17,6 @@ from matplotlib import pyplot as plt
 import subprocess
 from gtts import gTTS
 
-
 # image = read_img('files/500_1.jpg')
 # orig = image
 # orig = resize_img(orig, 0.5)
@@ -69,8 +68,8 @@ opening = cv2.morphologyEx(img, cv2.MORPH_OPEN, kernel)
 closing = cv2.morphologyEx(img, cv2.MORPH_CLOSE, kernel)
 display('image', closing)
 '''
-'''
 
+'''
 r = 500.0/ image.shape[1]
 dim = (500, int(image.shape[0] * r))
 image = cv2.resize(image, dim, interpolation = cv2.INTER_AREA)
@@ -81,17 +80,19 @@ ratio = image.shape[0] / 500.0
 
 gray = cv2.cvtColor(image, cv2.COLOR_BGR2GRAY)
 gray = cv2.GaussianBlur(gray, (5, 5), 0)
-edged = cv2.Canny(gray, 75, 200)	
+edged = cv2.Canny(gray, 75, 200
 '''
 
-# show the original image and the edge detected image
-#cv2.imshow("Image", image)
-#cv2.imshow("Edged", edged)
-#cv2.waitKey(0)
-#cv2.destroyAllWindows()
+'''
+show the original image and the edge detected image
+cv2.imshow("Image", image)
+cv2.imshow("Edged", edged)
+cv2.waitKey(0)
+cv2.destroyAllWindows()
 
-# find the contours in the edged image, keeping only the
-# largest ones, and initialize the screen contour
+find largest contours
+'''
+
 '''
 (_,cnts, _) = cv2.findContours(edged.copy(), cv2.RETR_LIST, cv2.CHAIN_APPROX_SIMPLE)
 cnts = sorted(cnts, key = cv2.contourArea, reverse = True)[:5]
@@ -118,6 +119,7 @@ while(n<.9 and flag==True):		#remove while loop if wrong contour is being detect
 
 warped = image
 '''
+
 '''
 print('Screen count:', screenCnt)
 
@@ -126,6 +128,7 @@ cv2.imshow("Outline", image)
 cv2.waitKey(0)
 cv2.destroyAllWindows()
 '''
+
 '''
 warped = four_point_transform(orig, screenCnt.reshape(4, 2))
 #warped = orig[ screenCnt[0][0][1]:screenCnt[1][0][1],screenCnt[0][0][0]:screenCnt[2][0][0]]
@@ -133,8 +136,8 @@ cv2.imshow('Warped',warped)
 cv2.waitKey(0)
 cv2.destroyAllWindows()
 '''
-'''
 
+'''
 r = 500.0/warped.shape[1]
 dim = (500, 240)
 warped = cv2.resize(warped, dim, interpolation = cv2.INTER_AREA)
@@ -144,98 +147,70 @@ cv2.imshow("Orignal", orig)
 cv2.imshow("Scanned", warped)
 cv2.waitKey(0)
 cv2.destroyAllWindows()
-
 '''
 
+max_val = 8
+max_pt = -1
+max_kp = 0
 
-maxVal = 8
-maxPt = -1
-maxKp = 0
 orb = cv2.ORB_create()
+# orb is an alternative to SIFT
 
+test_img = read_img('files/test_100_2.jpg')
+#test_img = read_img('files/test_50_2.jpg')
+#test_img = read_img('files/test_20_2.jpg')
+#test_img = read_img('files/test_100_3.jpg')
+# test_img = read_img('files/test_20_4.jpg')
 
-# hard coded here
-# must preprcoess and warp the image
+# resizing must be dynamic
+original = resize_img(test_img, 0.4)
+display('original', original)
 
-#img1 = read_img('files/test_100_2.jpg')
-img1 = read_img('files/test_50_2.jpg')
-#img1 = read_img('files/test_20_2.jpg')
+# keypoints and descriptors
+# (kp1, des1) = orb.detectAndCompute(test_img, None)
+(kp1, des1) = orb.detectAndCompute(test_img, None)
 
-orig = resize_img(img1, 0.4)
-display('original', orig)
+training_set = ['files/20.jpg', 'files/50.jpg', 'files/100.jpg', 'files/500.jpg']
 
-(kp1, des1) = orb.detectAndCompute(img1, None)
-# orb is an alternative for SIFT
+for i in range(0, len(training_set)):
+	# train image
+	train_img = cv2.imread(training_set[i])
 
-l = ['files/20.jpg', 'files/50.jpg', 'files/100.jpg', 'files/500.jpg']
+	(kp2, des2) = orb.detectAndCompute(train_img, None)
 
-for i in range(0, len(l)):
-
-	# print l[i]
-
-	img2 = cv2.imread(l[i])  # trainImag
-
-	# cv2.imshow("Input Image", img1)
-	# cv2.imshow("Stored image", img2)
-	# cv2.waitKey(0)
-	# cv2.imwrite('10x.png',img1)
-	# cv2.destroyAllWindows()
-	# Initiate SIFT detector
-
-	# find the keypoints and descriptors with SIFT
-
-	(kp2, des2) = orb.detectAndCompute(img2, None)
-
-	# create BFMatcher object
-	# bf = cv2.BFMatcher(cv2.NORM_HAMMING, crossCheck=True)
-	# Match descriptors.
-	# matches = bf.match(des1,des2)
-
-	# Sort them in the order of their distance.
-	# matches = sorted(matches, key = lambda x:x.distance)
-	# Draw first 10 matches.
-	# img3 = cv2.drawMatches(img1,kp1,img2,kp2,matches[:50],None, flags=2)
-
-	# plt.imshow(img3),plt.show()
-
-	# ### brute force matcher
-
+	# brute force matcher
 	bf = cv2.BFMatcher()
-	matches = bf.knnMatch(des1, des2, k=2)
-
-	# Apply ratio test
+	all_matches = bf.knnMatch(des1, des2, k=2)
 
 	good = []
-	for (m, n) in matches:
-		if m.distance < 0.75 * n.distance:
+	# give an arbitrary number -> 0.789
+	# if good -> append to list of good matches
+	for (m, n) in all_matches:
+		if m.distance < 0.789 * n.distance:
 			good.append([m])
 
-	if len(good) > maxVal:
-		maxVal = len(good)
-		maxPt = i
-		maxKp = kp2
+	if len(good) > max_val:
+		max_val = len(good)
+		max_pt = i
+		max_kp = kp2
 
-		# print good
+	#print(i, ' ', training_set[i], ' ', len(good))
 
-	#print(i, ' ', l[i], ' ', len(good))
+if max_val != 8:
+	#print(training_set[max_pt])
+	#print('good matches ', max_val)
 
-	# cv2.drawMatchesKnn expects list of lists as matches.
-
-if maxVal != 8:
-	#print(l[maxPt])
-	#print('good matches ', maxVal)
-	img2 = cv2.imread(l[maxPt])
-	img3 = cv2.drawMatchesKnn(img1, kp1, img2, maxKp, good, 2,)
+	train_img = cv2.imread(training_set[max_pt])
+	img3 = cv2.drawMatchesKnn(test_img, kp1, train_img, max_kp, good, 4)
 	
-
-	note = str(l[maxPt])[6:-4]
+	note = str(training_set[max_pt])[6:-4]
 	print('\nDetected denomination: Rs. ', note)
 
-	speech_out = note + 'Rupees'
+	audio_file = 'audio/' + note + '.mp3'
 
-	audio_file = "value.mp3"
-	tts = gTTS(text=speech_out, lang="en")
-	tts.save(audio_file)
+	# audio_file = "value.mp3
+	# tts = gTTS(text=speech_out, lang="en")
+	# tts.save(audio_file)
 	return_code = subprocess.call(["afplay", audio_file])
 
 	(plt.imshow(img3), plt.show())
