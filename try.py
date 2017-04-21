@@ -156,9 +156,9 @@ max_kp = 0
 orb = cv2.ORB_create()
 # orb is an alternative to SIFT
 
-test_img = read_img('files/test_100_2.jpg')
+#test_img = read_img('files/test_100_2.jpg')
 #test_img = read_img('files/test_50_2.jpg')
-#test_img = read_img('files/test_20_2.jpg')
+test_img = read_img('files/test_20_2.jpg')
 #test_img = read_img('files/test_100_3.jpg')
 # test_img = read_img('files/test_20_4.jpg')
 
@@ -194,11 +194,11 @@ for i in range(0, len(training_set)):
 		max_pt = i
 		max_kp = kp2
 
-	#print(i, ' ', training_set[i], ' ', len(good))
+	print(i, ' ', training_set[i], ' ', len(good))
 
 if max_val != 8:
-	#print(training_set[max_pt])
-	#print('good matches ', max_val)
+	print(training_set[max_pt])
+	print('good matches ', max_val)
 
 	train_img = cv2.imread(training_set[max_pt])
 	img3 = cv2.drawMatchesKnn(test_img, kp1, train_img, max_kp, good, 4)
