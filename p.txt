@@ -1,0 +1,287 @@
+odoo8-addon-field-char-transformed (8.0.1.0.0)  - Allows to transform input in character fields before writing or reading it to/from the database
+affine (2.0.0.post1)                            - Matrices describing affine transformation of the plane
+agx.core (1.0a2)                                - AGX tree transformation chain processor
+agx.transform.uml2fs (1.0a1)                    - AGX UML to Filesystem Transform
+agx.transform.xmi2uml (1.0a1)                   - AGX XMI to UML Transform
+amr2fol (0.3.1)                                 - Transform Abstract Meaning Representation (AMR) annotations to First Order Logic (FOL) formulas.
+django-ansi2html-filter (0.0.2)                 - Apply ansi2html transformation in Django templates
+appengine-config-transformer (0.1)              - Tool for converting between YAML and JSON representations.
+xml-archive-to-pdf (1.1.1)                      - Transformation d'un fichier xml de type unistra:archive en fichier pdf
+audiotrans-transform-fft (0.1.0.dev1)           - audiotrans transform module to FFT
+audiotrans-transform-istft (0.1.0.dev2)         - audiotrans transform module to Inverse Short-Time Fourier Transformation (ISTFT)
+audiotrans-transform-stft (0.1.0.dev2)          - audiotrans transform module to Short-Time Fourier Transformation (STFT)
+audiotrans (0.1.0.dev1)                         - Transform audio in real-time
+awkwardduet (1.1a4)                             - Lib3to2 maintenance fork. Lib3to2 is a set of fixers and utilities for
+lib2to3, a source code transformer included in Python standard library.
+bonvoyage (0.1.0)                               - Transform percentage-based units into a 2d space to evaluate changes in distribution with both magnitude and direction.
+brainpy (0.1)                                   - A package to transform and classify EEG data
+brocas-lm (1.0)                                 - Broca's LM is a free python library providing a probabilistic language model based on a Recurrent Neural Network (RNN) with Long Short-Term Memory (LSTM). It utilizes Gensim's Word2Vec implementation to transform input word sequences into a dense vector space. The output of the model is a seqeuence of probability distributions across the given vocabulary.
+django-calaccess-campaign-browser (0.0.0)       - A Django app to transform and refine campaign finance data drawn from the California Secretary of State’s CAL-ACCESS database.
+bubble (2016.8.16)                              - cli tool to bubble information from one to another service, with rule based transformations ">>>"
+prep-buddy (0.5.11)                             - A library for cleaning, transforming and executing all other preparation tasks for large datasets on Apache Spark
+c2.transform.msoffice (1.0b4)                   - This product enables to search MS-Office files on Plone.
+cairy (0.1)                                     - lightweight lib that allows easy transformation of data from one json mapping to another
+django-calaccess-processed-data (0.0.0)         - A Django app to transform and refine campaign finance data drawn from the California Secretary of State’s CAL-ACCESS database.
+canari (3.0)                                    - Maltego Rapid Transform Development Framework
+captionstransformer (1.2.1)                     - A set of tools (API + script) to read, write and transform captions from/to many formats
+cartwright (0.1.1a0)                            - transformation tracking for model building and deployment
+category_encoders (1.2.3)                       - A collection sklearn transformers to encode categorical variables as numeric
+ccwt (0.0.6)                                    - Complex continuous wavelet transformation
+jpegtran-cffi (0.5.2)                           - Extremly fast, (mostly) lossless JPEG transformations
+ckanext-dataapi (0.1)                           - CKAN Extension Data API - preview and access package resources through data transformation proxy service.
+openerp-client-etl (1.1.1)                      - OpenERP ETL Client allows to extract, transform and load data from any data source.
+stratisd-client-dbus (0.9)                      - transforms values into properly wrapped dbus-python objects
+cobertura-clover-transform (1.1.4.post1)        - Tools for transforming Cobertura test coverage XML into Clover-style XML
+cltools (0.4.2)                                 - Set of decorators of to create transform a class into a command-line tool.
+cocov (0.0.1)                                   - CoCo is a Code Convert tool which can transform file's encoding format.
+lt-code (0.3.3)                                 - An implementation of an Encoder and Decoder for the Luby Transform Fountain code. Useful for transmitting data over very lossy channels where retry-based transmission protocols struggle.
+codec (0.0.1)                                   - A data transformation package, i.e. to encode and decode data
+codetransformer (0.6.0)                         - Python code object transformers
+colcol (0.12)                                   - A script to deal with color conversions, color transformations, and generating color scales.
+collective.atimage.transformmenu (1.2.2)        - 'Transforms' menu in Image and News Item to perform image transformations
+collective.atimage.transformtoolbar (1.2.3)     - 'Transforms' toolbar in Image and News Item to perform image transformations
+collective.geotransform (1.0.2)                 - Gracefully email obfuscation for Plone
+collective.pdftransform (0.5)                   - A set of portal transform to change pdf into images
+collective.subrip2html (0.2.0)                  - A Plone module to add conversion from SRT format to HTML in portal_transforms tool
+collective.transform.creole (1.1)               - Creole wiki text transform for Plone
+collective.transform.docbook (0.1)              - DocBook text transform for Plone
+collective.transform.kml (0.1)                  - Transform KML to HTML
+collective.transform.multimarkdown (0.2)        - MultiMarkdown text transform for Plone
+collective.transform.ppt-xl (0.1)               - Powerpoint and Excel to HTML transformation
+collective.transform.txt2tags (1.1)             - txt2tags transform for Plone
+collective.transmogrifier (1.5.1)               - A configurable pipeline, aimed at transforming content for import and export
+collective.xdv (1.0rc11)                        - Integrates the xdv Deliverance implementation with Plone using a post-publication hook to transform content
+colorpro (0.2)                                  - Python based optionated color transformation tool.
+commonfate (0.1.3)                              - Common Fate Transform and Model
+container-transform (1.1.4)                     - A converter for various docker cluster formats
+wsgi-content-modifier (1.0)                     - A WSGI base for middlewares that modifies (transforms) the response
+contenttransformer (0.3.3)                      - transform e.g. file data based on type to be served TTW
+coorblimey (0.1.2)                              - coorblimey is an open source Python3 library to transform geocentric coordinates to geographic, and vice versa.
+CoordSys (0.52)                                 - cartesian coordinate system transformation
+CoorTransform_GirdGeographic (0.02.0)           - Provide functions for coordinate transform from grid to geographic, or vice versa
+cosine_transform (0.0.3)                        - Transform a vector to a new vector a given cosine distance away.
+pix-css (0.1.1)                                 - transform picture to pixel cs
+dict-to-csv (0.1.3)                             - Transform nested Python dictionaries to CSV lines
+csvtools (0.5.1)                                - Tools for transforming .csv files
+csvutils (0.1)                                  - Transformation utilities for csv (or csv-like) generated rows
+cubicweb-dataprocessing (0.2.1)                 - Data validation and transformation process
+cvloop (0.3.1)                                  - cvloop allows online video transformation and evaluation with OpenCV. Designed for jupyter notebooks.
+data-migrator (0.4.6)                           - declarative data migration and transformation package
+Data-Transformer (0.1.1)                        - Transforms provided input to an output, based on the transform.
+dataplunger (0.1.0)                             - Extract, Transform, Load
+into-dbus-python (0.6)                          - transforms values into properly wrapped dbus-python objects
+decisionTable (0.0.3)                           - Transform decision table string to code logic.
+Deliverance (0.6.1)                             - Deliverance transforms HTML to theme pages
+Deliverance.Rewrite (0.6.3)                     - Deliverance transforms HTML to theme pages, fork with separate header rewrite
+diazo (1.2.5)                                   - Diazo implements a Deliverance like language using a pure XSLT engine. With Diazo, you "compile" your theme and ruleset in one step, then use a superfast/simple transform on each request thereafter. Alternatively, compile your theme during development, check it into version control, and not touch Diazo during deployment.
+django-es2015-transformer (0.1)                 - A simple Django app to transform your js files from es2015 to es5.
+django-excel-response (1.0)                     - A subclass of HttpResponse which will transform a QuerySet,
+or sequence of sequences, into either an Excel spreadsheet or
+CSV file formatted for Excel, depending on the amount of data.
+
+http://djangosnippets.org/snippets/1151/
+django-rts (0.1.1)                              - A django app that provides building blocks to receive requests, transform data and send the response .
+django-tint (0.1)                               - Transparent image transformation system
+django-request-tree (0.8.1)                     - Provides dango views with input transformed into a tree structure.
+django-excel-response3 (1.51)                   - A subclass of HttpResponse which will transform a QuerySet,
+or sequence of sequences, into either an Excel spreadsheet or
+CSV file formatted for Excel, depending on the amount of data.
+http://github.com/danpetrikin/django-excel-response/
+django-simpleimages (1.3.3)                     - Opinionated Django image transforms on models
+djangorestframework-version-transforms (0.5.0)  - A library to enable the use of delta transformations for versioning of Django Rest Framwork API representations.
+eul-doc (1.0.7)                                 - Eul's Document Transforms
+docx-xslt (1.0.4)                               - XSL transformation for Microsoft Word .docx files
+dojo-google (0.0.10)                            - Dojo transforms using Google APIs.
+drchitu.XMLTransformer (1.2)                    - Plone product to transform XML into HTML using XSLT.
+dtcwt (0.11.0)                                  - A port of the Dual-Tree Complex Wavelet Transform MATLAB toolbox.
+duc (1.2)                                       - Module for validating and transforming data
+dwtviz (0.0.9)                                  - Creates visualizations for discrete wavelet transforms
+lxml-element-maker (1.0.1)                      - Transforms a python structure to an xml element with lxml
+envr (0.3.5)                                    - Manipulate and transform .env files that are a subset of POSIX-compliant shell scripts.
+et3 (1.4)                                       - Simple library for Extracting and Transforming data, third incarnation.
+Python-ETL (1.01)                               - Python-ETL is an open-source Extract, Transform, load (ETL) library written in Python. It allows data to be read from a variety of formats and sources, where it can be cleaned, merged, and transformed using any Python library and then finally saved into all formats python-ETL supports. Ported from cardsharp by Chris Bergstresser.
+etl2osm (0.2.0)                                 - Extract, Transform and Load to OpenStreetMap.
+etlalchemy (1.1)                                - Extract, Transform, Load. Migrate any SQL Database in 4 lines of code
+etllib (1.1)                                    - Extract, Transform and Load library.
+ETLT (0.0.42)                                   - Extract Transform Load - but not in that strict order
+monasca-events-transform (0.0.5)                - Monasca event transformation
+eviltransform (0.1.0)                           - Transform coordinates between earth(WGS-84) and mars in china(GCJ-02).
+excelt2json (1.0.1)                             - transform excel file to json files
+exporters (0.6.15)                              - Exporters is an extensible export pipeline library that supports filter, transform and several sources and destinations.
+fashionModel (0.1.6.dev1)                       - A utility for simple model transformation and source code generation
+ferenda (0.3.0)                                 - Transform unstructured document collections to structured Linked Data
+MRI-FFT (0.1.2)                                 - Optimized functions for performing 1D, 2D and 3D inverse Fourier's transforms, using Reikna and FFTW
+ffts (0.0.1)                                    - A cython wrapper for the fastest fourier transform in the south.
+fht (1.0.1)                                     - Fast Hadamard Transform
+FileCatalog (0.3.1)                             - Tools to create, view and transform hierachical YAML representations of directory structures.
+flatxml (0.12)                                  - Transform XML blob, file, or OrderedDict to a flat CSV or dictionary.
+FlexTransform (1.2.0)                           - Flexible Transform is a tool that enables dynamic translation between formats
+fluidfft (0.0.0)                                - Efficient and easy Fast Fourier Transform for Python.
+formv (0.0.6)                                   - HTML forms data validation, conversion & transformation
+Freezes (1.0.16)                                - Transform the plain text or blog to static website
+fte (0.1.3)                                     - Format-Transforming Encryption
+ftw.tika (2.7.0)                                - Apache Tika integration for Plone using portal transforms.
+gaeforms (0.21)                                 - A automated form validation and transformation based on App Engine Models
+Gelatin (2.0)                                   - Transform text files to XML, JSON, or YAML
+geoql (0.0.7.0)                                 - Library for performing queries and transformations on GeoJSON data (with emphasis on support for abstract graph representations).
+gis.geotransforms (0.1dev)                      - Coordinate transforms between standards like UTM, MGRS, WGS
+gomobile.xhtmlmp (0.1)                          - XHTML mobile profile HTML transformer and cleaner for Pyhton
+hankel (0.3.1)                                  - Hankel Transformations using method of Ogata 2005
+hatom2atom (0.6)                                - WSGI proxy for transforming hAtom to Atom via hAtom2Atom.xsl.
+hepos (0.1.0)                                   - Greek co-ordinate transformations using the HEPOS algorithm
+holy (0.0.2)                                    - POC Python AST to Ruby script transformer
+html2data (0.4.3)                               - A simple way to transform a HTML file or URL to structured data.
+html2docbook (0.1)                              - HTML to DocBook transformation
+html_table_parser (0.1.0)                       - Transform html tables from soup objects to usable data structures (eg 2D arrays)
+htmltransform (0.01)                            - python library for transforming HTML pages
+httm (0.2.2)                                    - A transformation library for RAW and Electron Flux TESS Images
+ibvp (2014.1)                                   - A data model for the description of (initial) boundary value problems, plus transformations
+imreg_dft (2.0.0)                               - Image registration utility using algorithms based on discrete Fourier transform (DFT, FFT)
+incf.countryutils (1.0)                         - A convenience API for transformations between different ISO 3166 country codes.
+Py-Infinote (0.93)                              - Py-Infinote is a Python implementation of the infinote     operation transformation protocol. It's a direct port of JInfinote
+isbnlib (3.6.8)                                 - Extract, clean, transform, hyphenate and metadata for ISBNs (International Standard Book Number).
+j2t (0.3.1)                                     - j2t: Python3 Jinja2 Template Transformer Utility.
+jicbioimage.transform (0.6.0)                   - Python package wrapping commonly used image transformations.
+JSONBender (0.8.0)                              - Library for transforming JSON data between different formats.
+JSONtoObject (0.0.3)                            - Transform JSON object to a Python Object
+latexfixer (0.2.1)                              - Transform unicode text into typographically more correct LaTeX compatible unicode.
+libgraph (0.0.3)                                - A toolchain for declaratively specifying transformations between schemas and instances of schemas to help track dependencies across schemas.
+livedoc (0.3.4)                                 - Transforms tests in documentation, and viceversa
+losser (0.0.3)                                  - Filter, transform and export a list of JSON objects to JSON or CSV
+lt (0.1)                                        - An implementation of an Encoder and Decoder for the Luby Transform Fountain code. Useful for transmitting data over very lossy channels where retry-based transmission protocols struggle.
+madseq (0.4.4)                                  - Parser/transformator for MAD-X sequences
+ManoelGadiFA (0.2)                              - A library that will transform the life of a Data Scientist
+markdown_tags (0.2.1)                           - A small library for writing markdown with a tree structure of python objects that you can transform into a markdown snippet(string).
+mcfit (0.0.2)                                   - Multiplicative convolutional fast integral transforms
+mdtogh (0.0.9)                                  - Transform markdown files into html with styles of github
+MetaGETA (1.4.0)                                - Metadata Gathering, Extraction and Transformation Application
+monasca-transform (0.0.1)                       - Monasca Transform and Aggregation Engine
+mtgtransform (0.0.7)                            - Magic the Gathering deck transformator.
+navtrix (0.0.3)                                 - Navtrix tracks position and rotation in a Transform class
+nfft (0.1)                                      - nfft: pure-python nonuniform fast Fourier transform
+nsgt (0.17)                                     - Python implementation of Non-Stationary Gabor Transform (NSGT)
+number2name_es (1.0.0)                          - Transform numbers digits to numbers in words
+numcodecs (0.2.1)                               - A Python package providing buffer compression and transformation codecs for use in data storage and communication applications.
+oldowan.mitomotifs (1.0.2)                      - Transform human mtDNA sequence to variant sites and vice versa.
+oldowan.mtconvert (1.0.6)                       - Transform human mtDNA sequence to variant sites and vice versa.
+onering (0.0.10)                                - A toolchain for declaratively specifying transformations between schemas and instances of schemas to help track dependencies across schemas.
+ONSdatabaker (1.1.3)                            - Excel Output Transformation
+opycleid (0.1.0)                                - Transformational music analysis in Python
+osxcollector_output_filters (1.0.15)            - Filters that process and transform the output of OSXCollector
+pdtransform (0.1)                               - Sklearn transformers that work with Pandas dataframes
+peevee (0.1)                                    - A path validator and transformer
+pepper8 (1.1.1)                                 - Transforms pep8 or flake8 output into an HTML report.
+petl (1.1.1)                                    - A Python package for extracting, transforming and loading tables of data.
+picles.plumber (0.11)                           - Simple data transformation pipeline.
+pip2amch (0.1.0)                                - Command to transform pip's requirements.txt into a csv for batch upload to https://allmychanges.com
+plone.intelligenttext (2.1.0)                   - Provides transforms from text/x-web-intelligent to text/html and vice versa.
+plone.outputfilters (3.0.1)                     - Transformations applied to HTML in Plone text fields as they are rendered
+plone.transformchain (1.2.0)                    - Hook into repoze.zope2 that allows third party packages to register a sequence of hooks that will be allowed to modify the response before it is returned to the browser
+plone.transforms (1.1a1)                        - Transformation registry and utilities.
+PottyMouth (2.2.1)                              - transform unstructured, untrusted text to safe, valid XHTML
+Products.AROfficeTransforms (0.11.0)            - Plone module to add conversion from office format to HTML in portal_transforms tool
+Products.PortalTransforms (3.0.0)               - MIME based content transformations
+projx (0.3.6)                                   - Graph transformations in Python
+py3o.fusion (0.8.7)                             - A Fusion server that will transform your py3o.template into final LibreOffice documents
+py3o.renderclient (0.2)                         - An easy solution to transform openoffice documents to supported formats
+py3o.renderserver (0.5.1)                       - An easy solution to transform libreoffice/openoffice documents to supported formats
+PyAbel (0.7.6)                                  - A Python package for forward and inverse Abel transforms
+pyFFTW (0.10.4)                                 - A pythonic wrapper around FFTW, the FFT library, presenting a unified interface for all the supported transforms.
+pyfht (1.7.0)                                   - Fast Hadamard Transform
+PyFormatTransformer (0.5)                       - Generic framework for translating between scientific data formats
+pygrametlsilex (0.0.3)                          - ETL (Extract, Transform, Load) written in Python.
+pylt (0.1.0.a1)                                 - Python Language Transformations: try alternate syntax
+pymaltego (1.2.0)                               - Package for developing Maltego Transforms
+pymtt (0.1.9)                                   - Command-line Text Transformer
+pynfftls (1.2)                                  - Fast Lomb-Scargle periodogram using Non-equispaced Fast Fourier Transform (NFFT)  by B. Leroy
+pynufft (0.3.2.9)                               - Python non-uniform fast Fourier transform (pynufft)
+pypi2rpm (0.6.3)                                - Script that transforms a sdist archive into a rpm archive
+pyrecursive (0.0.1)                             - Have you ever needed to transform a `whatever python object` in depth? So this one is for you. =]
+pysed (0.7.8)                                   - CLI utility that parses and transforms text
+pyspharm (1.0.8)                                - spherical harmonic transforms for python/numpy
+pytransform (0.2.3.2)                           - Applies transformation to structures and writes new pdb file
+pytransformer (1.0)                             - Python library to transform Data Structures
+PyWavelets (0.5.2)                              - PyWavelets, wavelet transform module
+  INSTALLED: 0.5.2 (latest)
+qmath (0.3.0)                                   - qmath provides a class for deal with quaternion algebra and 3D rotations.
+  Root evaluations and Moebius transformations are implemented.
+radontea (0.1.9)                                - Collection of algorithms to compute the inverse Radon transform
+raisin.recipe.transformation (1.1.1)            - A Buildout recipe for transforming data for the Raisin data warehouse
+ratetransformer (2.1)                           - Rate Transformer
+rdc.etl (1.0.0a6)                               - Extract Transform Load (ETL) toolkit for python
+rdfa2rdf (0.1)                                  - WSGI proxy for transforming RDFa to RDF via RDFa2RDFXML.xsl.
+webassets-react (1.0.1)                         - The webassets filter for transform React JSX to JS.
+redid_tools (0.2)                               - Redid media distribituion network tools. Redid provides a media distribution network offering dynamic media transformations and signed resource access.
+redomino.appytransforms (0.1)                   - ODT/ODS templating transforms for Plone
+redomino.odttransforms (0.4)                    - ODT templating transforms
+repoze.bitblt (0.9)                             - Image transforming WSGI middleware
+restxsl (0.9.1)                                 - Transform reStructuredText into XML using XSL stylesheets.
+richtextpy (0.2)                                - An operational transformation library for rich text documents
+rigidbody (0.13)                                - Rigid body transforms in 3D
+RO (3.6.9)                                      - Collection of utilities including general algorithms, astronomical transformations and Tkinter widgets
+romcrap (0.1)                                   - A library that will transform the life of a Data Scientist
+rst2atom (0.1.1)                                - Transform reStructuredText into XML Atom 1.0
+rst2html5-tools (0.5.3)                         - Transform reStructuredText documents to html5 + twitter's bootstrap css, deck.js or reveal.js
+rst2rst (0.2)                                   - Transform reStructuredText documents. Standardize RST syntax
+ruledxml (1.6.0)                                - Rule-based XML transformations
+RUST (0.1.1)                                    - Ribo-Seq Unit Step Transformation
+safedsl-transformer (0.1.0)                     - UNKNOWN
+sc.base.hotsites (1.0)                          - Transform a Plone Folder in a Hot Site
+scenariotest (1.0)                              - Combines a prototypical test case with a list of dictionaries (each a dict of keyword arguments) and transforms the two into a series of unittest-compatible test cases.
+schema-transformer (0.0.2)                      - A library for doing schema transformations
+scibook (0.15.0)                                - SciBook -- extensible xsl transformer with LaTeX includes
+se3 (0.2)                                       - Homogenous transforms in special euclidian 3-space.
+setlr (0.1.4)                                   - setlr is a tool for Semantic Extraction, Transformation, and Loading.
+shaderdef (0.8.3)                               - Transform Python code into GLSL shaders
+shapeshift (0.3.4)                              - A collection of python logging formats and helpers for transforming logs.
+SHTns (2.6.5)                                   - High performance Spherical Harmonic Transform
+smst (0.3.1)                                    - SMS tools - spectral audio modeling/synthesis/transformations
+snaptime (0.2.1)                                - Transform timestamps with a simple syntax "@day+9h"
+SNOMEDToOWL (0.3.1)                             - "Spackman OWL" transformation test and validation tool
+sploitego (1.2.2)                               - Penetration testing transforms for Maltego.
+spritify (0.4.2)                                - The spritify is a tool for transform directory of images in the stylesheet and image file.
+stackdistiller (0.12)                           - A data extraction and transformation library for OpenStack notifications
+Stetl (1.0.9)                                   - Stetl provides transformation for spatial data
+stft (0.5.2)                                    - Short Time Fourier transform for NumPy.
+streamcorpus_opensextant (0.2.9)                - Transforms for converting opensextant output into Token objects in streamcorpus
+stxnext.transform.avi2flv (0.2.1)               - Converts clips from AVI format to FLV during upload to Plone.
+suit (2.0.2)                                    - SUIT Framework (Scripting Using Integrated Templates)
+allows developers to define their own syntax for transforming templates by using rules.
+surt (0.3.0)                                    - Sort-friendly URI Reordering Transform (SURT) python package.
+svargaext.transform (0.6)                       - Source transformation module for Svarga framework
+swallow (1.6.7)                                 - Swallow for data transformation
+SWHT (0.1.1)                                    - Spherical Wave Harmonic Transform for radio astronomy visibility data
+t3tablerows (0.1.0)                             - Implement Sphinx transformation of "table-row" containers
+tcal (0.2.2)                                    - A transformation library for RAW and Electron Flux TESS Images
+tei_transformer (0.3.1)                         - Transform a TEI-encoded critical edition into a print-ready file.
+tensorflow-transform (0.1.7)                    - A library for data preprocessing with TensorFlow
+tvt-test-vector-transformer (0.0.1)             - Translate digital test vectors for automated test equipment for semiconductors
+thumpy (0.4.2)                                  - A Python web server that uses Pillow to dynamically scale, crop, transform and serve images from S3 or the local filesystem
+tical (0.2.2)                                   - A transformation library for RAW and Electron Flux TESS Images
+tiny_xslt (2.0.1)                               - Easy XSL transformations.
+usfm-tools (0.0.10)                             - A framework for transforming .usfm files into specified targets
+trac2rst (0.2.1)                                - Quick an dirty tool to transform text in Trac Wiki formatting to Restructured Text
+transformers (0.1)                              - Experimental module for AST transformations.
+transforms (0.1)                                - Python transforms
+transforms3d (0.3)                              - Functions for 3D coordinate transformations
+Treepace (0.3)                                  - Tree Transformation Language
+trouve (0.4.3)                                  - Event detection and transformation for time-series data
+trytond_nereid_image_transformation (4.0.0.1)   - Nereid Dynamic Image Resizing and transformation module
+ucs (0.3)                                       - Implements the CAM02-UCS forward transform symbolically, using Theano.
+untokenize (0.1.1)                              - Transforms tokens into original source code (while preserving whitespace).
+virtualenvify (0.1.0)                           - Transform an existing Python project into a virtualenv
+waterflow (v0.3)                                - Dataflow package provides a data analysis pipelineframework for data transformation and machine learning
+website (1.1)                                   - HTML to HTML transformer
+welder (0.1.5)                                  - HTML/XML server-side transformer. Port of hij1nk's weld for node.js.
+WorldMill (0.1)                                 - Access and transform geospatial feature data
+WPServer (1.1)                                  - a web mapping transformation library
+xdict (0.50)                                    - tools for transform between html,dict and cmdline
+xdv (0.4b3)                                     - XDV implements a subset of Deliverance using a pure XSLT engine. With XDV, you
+"compile" your theme and ruleset in one step, then use a superfast/simple
+transform on each request thereafter. Alternatively, compile your theme during
+development, check it into Subversion, and not touch XDV during deployment.
+xmldestroyer (0.2)                              - Bottom-up transformation of XML into python generators, XML, JSON or text.
+xmltrans (0.1.0)                                - XML transformation tool.
+yabormeparser (0.3)                             - A parser than transform PDF BORME files into a BORME JSON files.
+yg.thumpy (1.0.1)                               - A Python web server that uses Pillow to dynamically scale, crop, transform and serve images from S3 or the local filesystem
+yopp (0.1.2)                                    - Transforms YAML file to python objects using a custom parser
