@@ -1,17 +1,7 @@
-#!/usr/bin/python
-
-# test file
-# TODO:
-# 	Figure out four point transform
-#	Figure out testing data warping
-# 	Use webcam as input
-# 	Figure out how to use contours
-# 		Currently detects inner rect -> detect outermost rectangle
-# 	Try using video stream from android phone
-
-
 from utils import *
 from matplotlib import pyplot as plt
+import os
+from playsound import playsound
 
 import subprocess
 from gtts import gTTS
@@ -74,13 +64,13 @@ if max_val != 8:
 	note = str(training_set[max_pt])[6:-4]
 	print('\nDetected denomination: Rs. ', note)
 
-	audio_file = 'audio/' + note + '.mp3'
-
-	# audio_file = "value.mp3
-	# tts = gTTS(text=speech_out, lang="en")
-	# tts.save(audio_file)
-	return_code = subprocess.call(["afplay", audio_file])
-
+	audio_file = 'audio/{}.mp3'.format(note)
+	#audio_file = "value.mp3"
+	#tts = gTTS(text=speech_out, lang="en")
+	#tts.save(audio_file)
+	#return_code = subprocess.call(["afplay", audio_file])
+	#playsound(audio_file)
 	(plt.imshow(img3), plt.show())
+
 else:
 	print('No Matches')
